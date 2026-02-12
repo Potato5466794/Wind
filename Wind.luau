@@ -10295,14 +10295,14 @@ do
                 }
             end
 
-            local h = CreateNewInput("十六进制", "#" .. aw.Default:ToHex())
+            local h = CreateNewInput("Hex", "#" .. aw.Default:ToHex())
 
-            local j = CreateNewInput("红色", ToRGB(aw.Default).R)
-            local l = CreateNewInput("绿色", ToRGB(aw.Default).G)
-            local m = CreateNewInput("蓝色", ToRGB(aw.Default).B)
+            local j = CreateNewInput("Red", ToRGB(aw.Default).R)
+            local l = CreateNewInput("Green", ToRGB(aw.Default).G)
+            local m = CreateNewInput("Blue", ToRGB(aw.Default).B)
             local p
             if aw.Transparency then
-                p = CreateNewInput("阿尔法", ((1 - aw.Transparency) * 100) .. "%")
+                p = CreateNewInput("Alpha", ((1 - aw.Transparency) * 100) .. "%")
             end
 
             local r =
@@ -10330,13 +10330,13 @@ do
 
             local u = {
                 {
-                    Title = "取消",
+                    Title = "Cancel",
                     Variant = "Secondary",
                     Callback = function()
                     end
                 },
                 {
-                    Title = "应用",
+                    Title = "Apply",
                     Icon = "chevron-right",
                     Variant = "Primary",
                     Callback = function()
